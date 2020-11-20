@@ -1,7 +1,7 @@
 import React from "react";
 import Pagination from "../03_Pagination/Pagination";
 import { paginate } from "../Reusable_Component/02_Pagination/paginate";
-import TodoItem from "./03_ItemList";
+import TodoItem from "./03_ItemList.jsx";
 
 class OrganizerItems extends React.Component {
   constructor() {

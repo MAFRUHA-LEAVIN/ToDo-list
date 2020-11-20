@@ -3,6 +3,12 @@ import DeleteOutlineIcon from "@material-ui/icons/DeleteOutline";
 import styled from "../styles";
 
 class TodoItem extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      remember: false
+    }
+  }
   render() {
     const { item } = this.props;
     return (
@@ -18,6 +24,7 @@ class TodoItem extends React.Component {
                 this.props.UpdateItem(e.target.value, item.id);
               }}
             />
+            <input type="checkbox" defaultChecked={this.state.remember} />
             <span style={styled.del}>
               <DeleteOutlineIcon
                 onClick={() => this.props.onDeleteItem(item.id)}

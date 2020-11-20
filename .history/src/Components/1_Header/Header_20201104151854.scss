@@ -28,12 +28,13 @@ body {
 }
 .logo {
   .btn1 {
+    
     color: white;
     position: absolute;
     margin-left: 45px;
     padding: 0px;
     margin-top: 7px;
-    background-color: #262626;
+    background-color: #f8e4b7;
     border: none;
     text-decoration: none;
     display: inline-block;
@@ -47,6 +48,31 @@ body {
     height: 40px;
   }
 }
+.btn2{
+  background-color: #f8e4b7;
+
+
+}
+
+
+.btn3{
+  justify-content: space-between;
+  color: white;
+  position: absolute;
+  margin-left: 45px;
+  padding: 0px;
+  margin-top: 7px;
+  background-color: #f8e4b7;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+
+
+}
+
 .nav {
   ul {
     display: flex;

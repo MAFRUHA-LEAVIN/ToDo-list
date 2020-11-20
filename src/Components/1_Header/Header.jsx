@@ -24,11 +24,10 @@ class Nav extends Component {
         <nav className="navbar navbar-expand-ls navbar-dark bg-dark col">
           <div className="logo">
             <NavLink to="/">
-              <p className="btn1">DashBard</p>
+              <p className="btn1">MainView</p>
               <img src={Todo_Icon} alt="TODO" className="img1" />
             </NavLink>
           </div>
-
           <i
             className="fa fa-bars"
             aria-hidden="true"
@@ -36,11 +35,14 @@ class Nav extends Component {
           />
           <div className="nav">
             <ul className={`collaped ${isExpanded ? "is-expanded" : ""}`}>
-              <NavLink to="/weather_app">
-                <button>WeatherApp</button>
+
+
+              <NavLink to="/darkmode">
+                <button style={{ margin: "10px" }}>DarkMode</button>
               </NavLink>
-              <NavLink to="/navigation">
-                <button>Navigation</button>
+
+              <NavLink to="/weather">
+                <button style={{ margin: "10px", marginRight: "20px" }} >WeatherApp</button>
               </NavLink>
             </ul>
           </div>

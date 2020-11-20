@@ -7,7 +7,11 @@ import SearchIcon from "@material-ui/icons/Search";
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
-    backgroundColor: "black",
+    width: "90%",
+    marginLeft: "20px",
+    backgroundColor: "#FFFFFF",
+
+
   },
   search: {
     position: "relative",
@@ -15,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
     marginLeft: 0,
     width: "100%",
-    backgroundColor: "#41403a",
+    backgroundColor: "#e28120",
   },
   searchIcon: {
     padding: theme.spacing(0, 2),
@@ -33,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1, 1, 1, 0),
     paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
     transition: theme.transitions.create("width"),
-    width: "100%",
+    width: "90%",
     [theme.breakpoints.up("md")]: {
       width: "20ch",
     },

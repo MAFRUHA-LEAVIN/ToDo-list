@@ -1,8 +1,7 @@
 import React from "react";
-import OrganizerItems from "./02_OrganizerItems";
-import SearchBox from "../Reusable_Component/01_Search/Search";
-//import Weather from "./04_Weather";
-import styled from "../styles";
+import OrganizerItems from "./02_OrganizerItems.jsx";
+import SearchBox from "../Reusable_Component/01_Search/Search.jsx";
+import styled from "../styles3";
 
 class FirstPage extends React.Component {
   constructor(props) {
@@ -14,6 +13,7 @@ class FirstPage extends React.Component {
       combine: [],
       country: [],
       Weather: [],
+      isComplete: false,
       Wind: [],
       InitialInput: {
         text: "",
@@ -60,6 +60,8 @@ class FirstPage extends React.Component {
       });
     }
   }
+
+
   //to delete the Fields
   onDeleteItem(id) {
     const filteredItems = this.state.items.filter((item) => item.id !== id);
@@ -133,6 +135,7 @@ class FirstPage extends React.Component {
             </button>
           </div>
           <div>
+            <br />
             <SearchBox
               placeholder="Search todo ...."
               handleChange={(e) =>
@@ -147,8 +150,8 @@ class FirstPage extends React.Component {
               UpdateItem={this.UpdateItem}
             />
           ) : (
-            <div>Error: todo not defined </div>
-          )}
+              <div>Error: todo not defined </div>
+            )}
           <br />
         </div>
         <div style={styled.rowlist1}>
